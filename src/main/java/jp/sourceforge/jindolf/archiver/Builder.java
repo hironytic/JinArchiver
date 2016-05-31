@@ -58,7 +58,7 @@ public final class Builder{
             builder = new ContentBuilderSJ(BUF_SZ);
         }else if(charset.name().equalsIgnoreCase("UTF-8")){
             decoder = new StreamDecoder(charset.newDecoder());
-            builder = new ContentBuilderUCS2(BUF_SZ);
+            builder = new ContentBuilderUTF8(BUF_SZ);
         }else{
             assert false;
             return null;
